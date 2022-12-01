@@ -6,7 +6,7 @@ N="/dev/null";pushd .>$N;cd `dirname ${CURDIR}`>$N;CURDIR=`pwd`;popd>$N
 
 echo "*** Downloading updates ***"
 git remote set-url --add origin https://github.com/Asmartment/zato.git
-git -C $CURDIR pull support/3.1
+git -C $CURDIR pull origin support/3.1
 
 # Uninstall old dependencies
 $CURDIR/bin/pip uninstall -y sec-wall
